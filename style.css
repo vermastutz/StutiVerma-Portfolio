@@ -105,3 +105,36 @@ nav {
     border-bottom: 3px solid var(--color-accent);
   }
   
+
+  /* === Resume page “cards” === */
+body.resume-page section {
+    background: #f9f9f9;       /* light card background */
+    padding: 1.5rem;           /* inner spacing */
+    margin-bottom: 2rem;       /* space between cards */
+    border-radius: 8px;        /* rounded corners */
+  }
+  
+  /* Only h2 (section titles) get the pink bar */
+  body.resume-page h2 {
+    border-left: 4px solid var(--color-accent);
+    padding-left: 0.5rem;
+  }
+  
+  /* Remove any leftover left borders on other headings */
+  body.resume-page h1,
+  body.resume-page h3,
+  body.resume-page h4 {
+    border-left: none;
+    padding-left: 0;
+  }
+  
+
+/* === Highlight Home on the homepage === */
+body.home-page nav a:first-child {
+    background: var(--accent-light);
+    border-bottom: 3px solid var(--color-accent);
+    /* if you used a bottom-border style instead, you could do:
+       border-bottom: 3px solid var(--color-accent);
+    */
+  }
+  

@@ -1,5 +1,5 @@
 const pages = [
-    { url: "", title: "Home" },
+    { url: "../index.html", title: "Home" },
     { url: "resume/", title: "Resume" },
     { url: "projects/", title: "Projects" },
     { url: "contact/", title: "Contact" },
@@ -20,7 +20,7 @@ const pages = [
       ) {
         a.classList.add("current");
       }
-      if (!p.url.startsWith("/")) {
+      if (p.url.startsWith("http")) {
         a.target = "_blank";
       }
       nav.append(a);
