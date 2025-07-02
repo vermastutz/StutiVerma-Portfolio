@@ -1,0 +1,101 @@
+:root {
+    /* Your pink accent */
+    --color-accent: #ff69b4;
+    /* Lighter pink for backgrounds */
+    --accent-light: rgba(255, 105, 180, 0.2);
+    --border-color: rgba(255, 105, 180, 0.3);
+  }
+  
+
+  body {
+    background: #fff;
+    color: #000;
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    /* make content narrower so margins grow */
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 2rem 0;          /* extra top/bottom padding */
+  }
+  
+  nav {
+    display: flex;
+    /* spread items evenly across the full width of the nav container */
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0;
+    /* if you want the nav itself bleeding full browser width,
+       move this rule out of the body-constrained wrapper */
+  }
+  
+  /* give each link equal flex space */
+  nav a {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background 200ms;
+  }
+  
+  nav a:hover {
+    background: var(--accent-light);
+  }
+  
+  nav a.current {
+    background: var(--accent-light);
+  }
+  
+  
+  nav a.current {
+    background: var(--accent-light);  /* pink highlight behind active */
+  }
+  
+  h1, h2, h3, h4 {
+    border-left: 4px solid var(--color-accent);
+    padding-left: 0.5rem;
+    color: #000;               /* headings stay black */
+  }
+  
+  a {
+    color: var(--color-accent); /* project and explore links can stay pink */
+  }
+  
+  a:hover {
+    opacity: 0.8;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 0.5rem 0;
+  }
+  
+  button {
+    background: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 200ms;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  img {
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+  
