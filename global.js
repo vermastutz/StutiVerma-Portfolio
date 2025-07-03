@@ -1,8 +1,8 @@
 const pages = [
     { url: "../index.html", title: "Home" },
-    { url: "resume/", title: "Resume" },
-    { url: "projects/", title: "Projects" },
-    { url: "contact/", title: "Contact" },
+    { url: "/resume/", title: "Resume" },
+    { url: "/projects/", title: "Projects" },
+    { url: "/contact/", title: "Contact" },
     { url: "https://github.com/vermastutz", title: "GitHub" },
     { url: "https://www.linkedin.com/in/stutiverma04/", title: "LinkedIn" }
   ];

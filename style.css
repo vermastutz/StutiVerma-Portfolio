@@ -138,3 +138,82 @@ body.home-page nav a:first-child {
     */
   }
   
+
+  /* ===== Scale down for Projects page ===== */
+body.projects-page {
+    /* ensure a reasonable base font size */
+    font-size: 16px;
+    /* constrain content width for readability */
+    max-width: 75%;
+    margin: 0 auto;
+  }
+  
+  /* Smaller, tighter headings */
+  body.projects-page h1 {
+    font-size: 2rem;       /* instead of huge default */
+    margin-bottom: 1rem;
+  }
+  body.projects-page h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Normalize the search bar */
+  .searchBar {
+    font-size: 1rem !important;
+    padding: 0.5rem !important;
+    max-width: 30em;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  
+  /* Tighter chart container spacing */
+  .chart-container {
+    margin: 1.5rem 0;
+  }
+  
+  /* Project cards: limit width & spacing */
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: start;
+  }
+  .projects article {
+    flex: 1 1 calc(33% - 1.5rem);
+    max-width: calc(33% - 1.5rem);
+    box-sizing: border-box;
+  }
+  @media (max-width: 800px) {
+    .projects article {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Shrink the pie chart on the Projects page */
+body.projects-page .chart-container svg#projects-pie-plot {
+    width: 12rem;      /* about 128px wide */
+    height: 12rem;     /* keep it square */
+    display: block;   /* ensure it respects the width/height */
+    margin-right: 1.5rem;
+  }
+  
+  /* Adjust legend spacing to match smaller chart */
+  body.projects-page .chart-container .legend {
+    gap: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* Legend swatch: show the pastel color for each year */
+body.projects-page .legend li .swatch {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: var(--color);
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  }
+  
+  
