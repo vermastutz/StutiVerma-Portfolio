@@ -216,4 +216,40 @@ body.projects-page .legend li .swatch {
     vertical-align: middle;
   }
   
+ /* Projects page: controls layout */
+body.projects-page .controls {
+    display: flex;
+    align-items: flex-start;
+    gap: 20rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Make the search box narrower */
+  body.projects-page .controls .searchBar {
+    flex: 0 1 50ch;      /* base width ~50 characters */
+    max-width: 50ch;     /* cap it there */
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+  /* Ensure the chart stays on the same row */
+  body.projects-page .controls .chart-container {
+    flex: 0 0 auto;
+  }
+  
+  body.projects-page .chart-container {
+    display: flex;            /* lay children in a row */
+    align-items: flex-start;  /* align tops of svg & legend */
+    gap: 1.5rem;              /* space between chart and legend */
+  }
+  
+  /* Tighten up legend spacing when it's beside the chart */
+  body.projects-page .chart-container .legend {
+    margin: 0;                /* remove any vertical margins */
+    padding: 0;               /* remove list padding */
+    list-style: none;
+    display: flex;
+    flex-direction: column;   /* stack legend items vertically */
+    gap: 0.5rem;              /* space between legend entries */
+  }
   
