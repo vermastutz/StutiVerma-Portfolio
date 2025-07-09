@@ -46,7 +46,8 @@
         "title": "Power Outages in the US",
         "year": 2024,
         "image": "../images/power_outages_US.png",
-        "description": "Analyzed and cleaned a dataset of US power outages, built a prediction model to estimate outage duration, developed a regression model evaluated by RMSE, created a static website with Jekyll and interactive visualizations, and conducted a fairness analysis to ensure unbiased performance across regions and customers."
+        "description": "Analyzed and cleaned a dataset of US power outages, built a prediction model to estimate outage duration, developed a regression model evaluated by RMSE, created a static website with Jekyll and interactive visualizations, and conducted a fairness analysis to ensure unbiased performance across regions and customers.",
+         "url": "https://vermastutz.github.io/US-Power-Outages/"
     },
     {
         "title": "Tesla Equity Valuation",
