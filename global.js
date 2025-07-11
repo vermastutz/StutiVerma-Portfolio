@@ -29,4 +29,12 @@ const pages = [
   }
   
   createNav();
+
+  document.getElementById("speak-name")?.addEventListener("click", () => {
+    const utter = new SpeechSynthesisUtterance("Stoo-tee Ver-mah");
+    // you can set voice, rate, pitch here if you like:
+    utter.rate = 0.5;
+    speechSynthesis.speak(utter);
+  });
+  
   
