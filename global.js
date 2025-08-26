@@ -37,4 +37,23 @@ const pages = [
     speechSynthesis.speak(utter);
   });
   
+
+
+// global.js
+const base = document.currentScript?.dataset.base ?? './'; // './' on home, '../' in subpages
+
+const links = [
+  ['Home', `${base}`],
+  ['Resume', `${base}resume/`],
+  ['Projects', `${base}projects/`],
+  ['Contact', `${base}contact/`],
+  ['GitHub', 'https://github.com/vermastutz', '_blank'],
+  ['LinkedIn', 'https://www.linkedin.com/in/stutiverma04/', '_blank'],
+];
+
+const nav = document.querySelector('nav');
+nav.innerHTML = links.map(([label, href, target]) =>
+  `<a href="${href}" ${target ? `target="${target}" rel="noopener"` : ''}>${label}</a>`
+).join('');
+
   
